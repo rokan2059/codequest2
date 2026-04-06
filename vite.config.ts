@@ -9,6 +9,9 @@ export default defineConfig(({ mode }) => {
         port: 3000,
         host: '0.0.0.0',
       },
+      preview: {
+        allowedHosts: ['codequest2-emr4.onrender.com'],
+      },
       plugins: [react()],
       resolve: {
         alias: {
