@@ -43,3 +43,56 @@ body {
 .slide-up-fade-in {
     animation: slideUpAndFadeIn 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
+
+/* Enhanced focus ring for accessibility */
+:focus {
+    outline: 2px solid #38bdf8; /* sky-400 */
+    outline-offset: 2px;
+    transition: outline 0.2s;
+}
+
+/* Button polish */
+button, [type="button"], [type="submit"] {
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 2px 0 rgb(30 41 59 / 0.08);
+}
+button:active {
+    transform: scale(0.98);
+}
+
+/* Card polish */
+.card {
+    background: linear-gradient(135deg, rgba(30,41,59,0.95) 60%, rgba(51,65,85,0.95) 100%);
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px 0 rgb(30 41 59 / 0.12);
+    border: 1px solid #334155;
+    padding: 2rem;
+    transition: box-shadow 0.2s, border 0.2s;
+}
+.card:hover {
+    box-shadow: 0 8px 32px 0 rgb(56 189 248 / 0.15);
+    border-color: #38bdf8;
+}
+
+/* Input polish */
+input, select, textarea {
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 0.5rem;
+    color: #f1f5f9;
+    padding: 0.75rem 1rem;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+input:focus, select:focus, textarea:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 2px #38bdf8;
+}
+
+/* Subtle fade-in for all main containers */
+.fade-in {
+    animation: fadeIn 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
