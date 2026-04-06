@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+@import "@fontsource/inter/800.css";
+@import "@fontsource/inter/900.css";
+
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #020617; /* slate-900 */
+    color: #f8fafc; /* slate-50 */
+}
+
+/* Custom Scrollbar for a more polished look */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #1e293b; /* slate-800 */
+}
+::-webkit-scrollbar-thumb {
+    background: #475569; /* slate-600 */
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #64748b; /* slate-500 */
+}
+
+
+@keyframes slideUpAndFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-up-fade-in {
+    animation: slideUpAndFadeIn 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
