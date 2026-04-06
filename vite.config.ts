@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => {
         host: '0.0.0.0',
       },
       preview: {
-        allowedHosts: ['codequest2-emr4.onrender.com'],
+        allowedHosts: ['codequest2-emr4.onrender.com', 'codequest2-chcp.onrender.com'],
       },
       plugins: [react()],
       resolve: {
